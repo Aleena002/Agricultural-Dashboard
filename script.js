@@ -1,3 +1,9 @@
+// Toggle sidebar
+function toggleSidebar() {
+  const sidebar = document.getElementById('mySidebar');
+  sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
+}
+
 // Sidebar active link highlight
 const sidebarLinks = document.querySelectorAll('#mySidebar a');
 const currentPage = window.location.pathname.split("/").pop();
